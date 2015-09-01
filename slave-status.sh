@@ -6,7 +6,7 @@ JENKINS_URL=""
 JENKINS_CLI=""
 USERNAME=""
 PASSWORD=""
-SLAVEFILE=""
+SLAVEFILE="slaves.txt"
 
 # Create session in Jenkins
 java -jar $JENKINS_CLI -s $JENKINS_URL login --username $ACCESS --password $ACCESS
