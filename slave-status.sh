@@ -18,6 +18,7 @@ do
 	if [[ "$CHECKED" == "true" ]]; then
         	ssh -tt $JENKINS_NODENAME './kill-slave.sh'
         	exit 0
+				else
+					echo "INFO: $JENKINS_NODENAME is online, no need to restart."
 	fi
-	echo "INFO: $JENKINS_NODENAME is online, no need to restart."
 done
