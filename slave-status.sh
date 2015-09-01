@@ -9,6 +9,7 @@ PASSWORD=""
 SLAVEFILE="slaves.txt"
 
 # Create session in Jenkins
+# Insert ssh public key from username and password in Jenkins master
 java -jar $JENKINS_CLI -s $JENKINS_URL login --username $ACCESS --password $ACCESS
 
 # Checking Jenkins offline and restart if offline
